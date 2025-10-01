@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev":"nodemon backend/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start":"node backend/index.js"
+    "start": "cross-env NODE_ENV=production node backend/index.js"
   },
   "keywords": [
     "MERN"
@@ -20,6 +20,7 @@
     "mongoose": "^8.18.3"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "nodemon": "^3.1.10"
   }
 }
