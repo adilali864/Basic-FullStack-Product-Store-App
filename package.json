@@ -1,0 +1,24 @@
+{
+  "name": "product-store",
+  "version": "1.0.0",
+  "description": "A fullstack deployable responsive basic product store application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev":"nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Adil Khan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
